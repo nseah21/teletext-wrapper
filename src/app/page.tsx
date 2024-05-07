@@ -1,17 +1,12 @@
-"use client";
-
-import Credits from "@/components/Footer";
-import Header from "@/components/Header";
+"use client"
 import Layout from "@/components/Layout";
-import Results from "@/components/OtherResults";
+import Results from "@/components/Results";
 
-export default function Home(props) {
+  export default function Home() {
   return (
     <>
       <Layout>
-        <Header firstPrize={props.firstPrize} secondPrize={props.secondPrize} thirdPrize={props.thirdPrize} drawDate={props.drawDate} metadata={props.metadata} />
-          <Results />
-          <Credits />
+        <Results />
       </Layout>
     </>
   );
